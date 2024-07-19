@@ -1,0 +1,29 @@
+*converter*  Convert text between defferent case style
+
+Author:  Sang Chen <sang.chen@outlook.com>
+License: MIT license
+
+INTRODUCTION                                     *converter* *converter.vim*
+
+vim-case-converter provides commands to converts between different case styles.
+
+COMMANDS                                         *converter-commands*
+
+:{SourceCaseStyle}To{TargetCaseStyle}
+    Convert text from {SourceCaseStyle} to {TargetCaseStyle}.
+
+Optional case style name:
+
+- SnakeCase: `snake_case`
+
+- CamelCase: `camelCase`
+
+- PascalCase: `PascalCase`
+
+- UpperSnakeCase: `UPPER_SNAKE_CASE`
+
+- KebabCase: `kebab-case`
+
+- TrainCase: `Train-Case`
+
+- DotCase: `dot.case`

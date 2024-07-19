@@ -11,8 +11,8 @@ function SnakeCaseToPascalCase() range
 endfunction
 
 " snake_case -> UPPER_SNAKE_CASE
-:command -range SnakeCaseToUpperCase <line1>,<line2> call SnakeCaseToUpperCase()
-function SnakeCaseToUpperCase() range
+:command -range SnakeCaseToUpperSnakeCase <line1>,<line2> call SnakeCaseToUpperSnakeCase()
+function SnakeCaseToUpperSnakeCase() range
     execute a:firstline ',' a:lastline 'substitute /_/\U&/g'
 endfunction
 
@@ -47,8 +47,8 @@ function CamelCaseToPascalCase() range
 endfunction
 
 " camelCase -> UPPER_SNAKE_CASE
-:command -range CamelCaseToUpperCase <line1>,<line2> call CamelCaseToUpperCase()
-function CamelCaseToUpperCase() range
+:command -range CamelCaseToUpperSnakeCase <line1>,<line2> call CamelCaseToUpperSnakeCase()
+function CamelCaseToUpperSnakeCase() range
     execute a:firstline ',' a:lastline 'substitute /\v([a-z0-9])([A-Z])/\1_\U\2/g'
 endfunction
 
@@ -87,8 +87,8 @@ function PascalCaseToCamelCase() range
 endfunction
 
 " PascalCase -> UPPER_SNAKE_CASE
-:command -range PascalCaseToUpperCase <line1>,<line2> call PascalCaseToUpperCase()
-function PascalCaseToUpperCase() range
+:command -range PascalCaseToUpperSnakeCase <line1>,<line2> call PascalCaseToUpperSnakeCase()
+function PascalCaseToUpperSnakeCase() range
     execute a:firstline ',' a:lastline 'substitute /\v([a-z0-9])([A-Z])/\1_\U\2/g'
     execute a:firstline ',' a:lastline 'substitute /^./\l&/'
 endfunction
@@ -169,8 +169,8 @@ function KebabCaseToPascalCase() range
 endfunction
 
 " kebab-case -> UPPER_SNAKE_CASE
-:command -range KebabCaseToUpperCase <line1>,<line2> call KebabCaseToUpperCase()
-function KebabCaseToUpperCase() range
+:command -range KebabCaseToUpperSnakeCase <line1>,<line2> call KebabCaseToUpperSnakeCase()
+function KebabCaseToUpperSnakeCase() range
     execute a:firstline ',' a:lastline 'substitute /-/\U&/g'
 endfunction
 
@@ -205,8 +205,8 @@ function TrainCaseToPascalCase() range
 endfunction
 
 " Train-Case -> UPPER_SNAKE_CASE
-:command -range TrainCaseToUpperCase <line1>,<line2> call TrainCaseToUpperCase()
-function TrainCaseToUpperCase() range
+:command -range TrainCaseToUpperSnakeCase <line1>,<line2> call TrainCaseToUpperSnakeCase()
+function TrainCaseToUpperSnakeCase() range
     execute a:firstline ',' a:lastline 'substitute /-/\U&/g'
 endfunction
 
@@ -241,8 +241,8 @@ function DotCaseToPascalCase() range
 endfunction
 
 " dot.case -> UPPER_SNAKE_CASE
-:command -range DotCaseToUpperCase <line1>,<line2> call DotCaseToUpperCase()
-function DotCaseToUpperCase() range
+:command -range DotCaseToUpperSnakeCase <line1>,<line2> call DotCaseToUpperSnakeCase()
+function DotCaseToUpperSnakeCase() range
     execute a:firstline ',' a:lastline 'substitute /\./\U&/g'
 endfunction
 
