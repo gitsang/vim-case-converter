@@ -136,6 +136,7 @@ endfunction
 :command -range UpperSnakeCaseToKebabCase <line1>,<line2> call UpperSnakeCaseToKebabCase()
 function UpperSnakeCaseToKebabCase() range
     execute a:firstline ',' a:lastline 'substitute /_/-/g'
+    execute a:firstline ',' a:lastline 'substitute /^./\l&/'
 endfunction
 
 " UPPER_SNAKE_CASE -> Train-Case
