@@ -3,6 +3,8 @@
 vim-case-converter is a Vim plugin that provides commands to converts between
 different case styles.
 
+![](./img/vim-case-converter-usage.gif)
+
 ## Installation
 
 ### Plug
@@ -44,4 +46,3 @@ NeoBundle 'gitsang/vim-case-converter'
 - KebabCase: `kebab-case`
 - TrainCase: `Train-Case`
 - DotCase: `dot.case`
-
